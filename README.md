@@ -16,7 +16,7 @@ This demo currently works with:
 * Rails 5.2.x
 * PostgreSQL
 
-If you need help setting up a Ruby development environment, check out my [Rails OS X Setup Guide](https://mattbrictson.com/rails-osx-setup-guide).
+If you need help setting up a Ruby development environment, check out these [Rails OS X Setup Guide](https://mattbrictson.com/rails-osx-setup-guide).
 
 ## Installation
 
@@ -49,7 +49,7 @@ rails s
 The demo will perform the following steps:
 
 1. Create a players
-2. Create new games with player
+2. Create new game with players
 3. Generating leader boards for games
 
 ## What is included?
@@ -116,3 +116,22 @@ add_foreign_key "participants", "players"
   t.index ["game_id"], name: "index_participants_on_game_id"
   t.index ["player_id"], name: "index_participants_on_player_id"
 ```
+
+## Screenshots
+  * Player screen
+
+    * Add new Player https://nimb.ws/4zt7YE
+    * List of players https://nimb.ws/3QbSUE
+    * Player profile https://nimb.ws/WYMqo6
+    * Edit/Delete Player profile https://nimb.ws/znVvOC
+
+  * Game screen
+
+    * Add new Game https://nimb.ws/1bFpRm
+    * List of Games https://nimb.ws/uvxUVL
+    * Game details https://nimb.ws/tGwMqm
+    * Edit/Delete Game https://nimb.ws/MetcSr
+  
+  * Leader board
+
+    * Leader board https://nimb.ws/6GtARi
