@@ -20,7 +20,7 @@ If you need help setting up a Ruby development environment, check out these [Rai
 
 ## Installation
 
-To make this rub on your system, follow below steps:
+To make this run on your system, follow below steps:
 
 1.  Clone the repository
 ```
@@ -30,7 +30,8 @@ git clone git@github.com:simformsolutions/scrabble_club.git
 ```
 ruby -v
 ```
-The ouput should start with something like ruby `2.5.1` If not, install the right ruby version using `rvm` (it could take a while):
+The ouput should start with something like ruby `2.5.1` If not, install the right ruby version using `rvm` (it could take a while)
+
 3. Install dependencies
 ```
 bundle install
@@ -48,9 +49,9 @@ rails s
 
 The demo will perform the following steps:
 
-1. Create a players
+1. Create new player
 2. Create new game with players
-3. Generating leader boards for games
+3. Generate leader board for games
 
 ## What is included?
 
@@ -67,7 +68,7 @@ The demo will perform the following steps:
 
 Database tables used as below
 * players to store player details 
-```
+```sql
 create_table "players", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -80,7 +81,7 @@ create_table "players", force: :cascade do |t|
 
 * games to store game details
 
-```
+```sql
 create_table "players", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -93,7 +94,7 @@ create_table "players", force: :cascade do |t|
 
 * participants to store participant details
 
-```
+```sql
 create_table "participants", force: :cascade do |t|
     t.float "score"
     t.bigint "player_id"
@@ -105,14 +106,14 @@ create_table "participants", force: :cascade do |t|
 
 * Foreign keys
 
-``` 
+```sql
 add_foreign_key "participants", "games"
 add_foreign_key "participants", "players"
 
 ````
   * Indexes
 
-  ```
+  ```sql
   t.index ["game_id"], name: "index_participants_on_game_id"
   t.index ["player_id"], name: "index_participants_on_player_id"
 ```
@@ -120,18 +121,18 @@ add_foreign_key "participants", "players"
 ## Screenshots
   * Player screen
 
-    * Add new Player https://nimb.ws/4zt7YE
-    * List of players https://nimb.ws/3QbSUE
-    * Player profile https://nimb.ws/WYMqo6
-    * Edit/Delete Player profile https://nimb.ws/znVvOC
+    * [Add new Player](https://nimb.ws/4zt7YE)
+    * [List of Players](https://nimb.ws/3QbSUE)
+    * [Player Profile](https://nimb.ws/WYMqo6)
+    * [Edit/Delete Player profile](https://nimb.ws/znVvOC)
 
   * Game screen
 
-    * Add new Game https://nimb.ws/1bFpRm
-    * List of Games https://nimb.ws/uvxUVL
-    * Game details https://nimb.ws/tGwMqm
-    * Edit/Delete Game https://nimb.ws/MetcSr
+    * [Add new Game](https://nimb.ws/1bFpRm)
+    * [List of Games](https://nimb.ws/uvxUVL)
+    * [Game details](https://nimb.ws/tGwMqm)
+    * [Edit/Delete Game](https://nimb.ws/MetcSr)
   
   * Leader board
 
-    * Leader board https://nimb.ws/6GtARi
+    * [Leader board](https://nimb.ws/6GtARi)
